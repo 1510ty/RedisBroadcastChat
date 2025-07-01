@@ -13,8 +13,10 @@ repositories {
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.21.7-R0.1-SNAPSHOT")
+    implementation("redis.clients:jedis:5.1.0")
 }
 
 java {
     toolchain.languageVersion.set(JavaLanguageVersion.of(21))
 }
+
